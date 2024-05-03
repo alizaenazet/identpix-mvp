@@ -1,7 +1,11 @@
 import React from 'react'
 import { Button } from "@/components/ui/button"
 import Link from 'next/link'
+import { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: 'About Us',
+};
 export default function Page() {
   return (
     <main className='flex h-screen flex-col  justify-center items-center p-16'>
