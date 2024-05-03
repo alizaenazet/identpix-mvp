@@ -1,6 +1,7 @@
 'use client'
 import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
+import Link from 'next/link'
 
 export default function RegisterForm() {
   return (
@@ -44,7 +45,9 @@ export default function RegisterForm() {
                 </select>
             </div>
         </div>
-        <Button className="w-full">Continue</Button>
+        <Link className='w-full' href={"/coming-soon"}>
+            <Button className="w-full">Continue</Button>
+        </Link>
     </form>
   )
 }
