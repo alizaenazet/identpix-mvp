@@ -12,7 +12,6 @@ const links = [
 ];
 export default function DefaultMenu() {
     const pathname = usePathname();
-    console.log(pathname == "/about-us")
     return (
     <>
       {links.map((link) => {
