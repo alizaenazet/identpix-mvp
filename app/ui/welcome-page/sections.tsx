@@ -4,7 +4,7 @@ import Link from "next/link";
 import Faq from "@/app/ui/welcome-page/faq";
 export function Section1() {
   return (
-    <div className="w-full bg-primary h-[283px] md:h-[650px] flex flex-col p-2 md:p-3 justify-center items-center gap-3">
+    <div className="w-full bg-primary h-[283px] md:h-[650px] flex flex-col p-2 mt-3 md:p-3 justify-center items-center gap-3">
       <div className="flex flex-col justify-center items-center gap-1 pb-1 pt-12">
         <h1 className="text-white text-xl md:text-5xl md:font-extrabold font-semibold">Store, Filter, Save Time</h1>
         <p className="text-center text-white text-sm md:text-2xl font-normal">
