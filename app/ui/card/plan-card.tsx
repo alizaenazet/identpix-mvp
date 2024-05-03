@@ -31,7 +31,7 @@ export default function PlanCard({
         <div className='flex flex-col justify-start items-start'>
             {
                 specificationList.map((spec) => (
-                <div className='flex flex-row gap-1 items-center justify-center'>
+                <div key={spec} className='flex flex-row gap-1 items-center justify-center'>
                     <Image src={"/check.svg"} width={12} height={12} alt='check-icon'/>
                     <p className='text-xs font-normal'>{spec}</p>
                 </div>
