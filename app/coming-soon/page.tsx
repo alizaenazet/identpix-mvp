@@ -1,5 +1,9 @@
 import EmailForm  from "@/app/ui/coming-soon/email-form";
+import { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: 'Coming Soon',
+};
 export default function Page() {
   return (
     <main className='flex h-screen flex-col  justify-center items-center p-14 md:p-32 lg:p-55'>

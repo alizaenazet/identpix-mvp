@@ -6,10 +6,14 @@ import {
 } from "@/components/ui/tabs"
 import { Button } from "@/components/ui/button";
 import Link from 'next/link'
+import { Metadata } from 'next';
 
 import MonthlyPlan from '@/app/ui/pricing/monthly-plan';
 import YearlyPlan from '@/app/ui/pricing/yearly-plan';
 
+export const metadata: Metadata = {
+  title: 'Pricing',
+};
 export default function Page() {
   return (
     <main className='flex w-screen flex-col  justify-start items-center p-3.5 pb-6 md:p-20 lg:p-28'>
