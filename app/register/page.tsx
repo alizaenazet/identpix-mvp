@@ -4,6 +4,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Register',
 };
+
 export default function Page() {
   return (
     <main className='flex h-screen flex-col  justify-center items-center p-16'>

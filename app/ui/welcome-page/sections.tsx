@@ -47,7 +47,7 @@ export function Section2() {
       />
       <div className="flex flex-col md:w-96 justify-start items-center gap-2 px-4 md:px-0">
           <p className="text-black text-sm md:text-xl lg:text-2xl font-semibold">Conserve Time, Effectively Streamline your Filtering Process</p>
-          <p className="text-xs md:text-base ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim</p>
+          <p className="text-xs md:text-base ">With IdentPix facial classification technology, you can swiftly organize and share photos sorted based on each individual, ensuring full control over distribution without compromising your precious time.</p>
       </div>
     </div>
   )
@@ -191,7 +191,7 @@ export function Section3() {
 
       <div className="w-full lg:w-[373px] flex flex-col gap-2 justify-start items-center ">
         <h3 className="text-black text-sm md:text-2xl  font-semibold">Customize photo selection based on every individual</h3>
-        <p className="text-xs md:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim</p>
+        <p className="text-xs md:text-base">Every person has their own preferences when it comes to choosing photos. Our AI Identification accurately sorts and filters images based on individual traits, encompassing everything from facial characteristics to expressions.</p>
       </div>
     </div>
   )
@@ -223,7 +223,7 @@ export function Section4() {
       />
       <div className="flex flex-col gap-3 justify-center items-start md:w-96 md:py-12">
         <h3 className="text-sm font-semibold md:text-2xl ">Unlimited Access to Uploaded Files</h3>
-        <p className="text-xs md:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim</p>
+        <p className="text-xs md:text-base">IdentPix offers limitless access to photos, streamlining management and distribution processes. Furthermore, users enjoy unrestricted access, ensuring that uploaded photos are stored well.</p>
       </div>
     </div>
   )
@@ -241,8 +241,8 @@ export function Section5() {
         <Button className="bg-black text-white">Register Now</Button>
       </Link>
       </div>
-      <Link className="w-full flex flex-col items-center " href={"/register"}>
-        <Button variant="link">Register Now</Button>
+      <Link className="w-full flex flex-col items-center " href={"/pricing"}>
+        <Button variant="link">Learn more</Button>
       </Link>
     </div>
   )
@@ -253,20 +253,24 @@ export function Section6() {
     <div className="w-full h-max flex flex-col items-start justify-center gap-3 py-4 md:py-9 mb-3 md:mb-6 px-7 lg:px-16">
       <h3 className="text-base md:text-3xl font-semibold">FAQ</h3>
       <Faq
-      question="Lorem ipsum dolor sit amet, consectetur? "
+      question="Is my personal data secure?"
       answer="Lorem ipsum dolor sit amet, consectetur? "
       />
       <Faq
-      question="Lorem ipsum dolor sit amet, consectetur? "
-      answer="Lorem ipsum dolor sit amet, consectetur? "
+      question="How can I get further assistance if I encounter an issue? "
+      answer="If you encounter any issues or require further assistance, feel free to reach out to our support team via the 'Help' option in the app or by emailing us at [support email address]. We&apos;re here to assist you! "
       />
       <Faq
-      question="Lorem ipsum dolor sit amet, consectetur? "
-      answer="Lorem ipsum dolor sit amet, consectetur? "
+      question="How do I provide feedback or report an issue? "
+      answer="We greatly value your feedback! Feel free to share your input through the 'Contact Us' option in the app or by emailing us at [support email address]."
       />
       <Faq
-      question="Lorem ipsum dolor sit amet, consectetur? "
-      answer="Lorem ipsum dolor sit amet, consectetur? "
+      question="Are there limitations on the use of facial classification technology (AI) in this application? "
+      answer="We enforce strict limitations on the use of facial recognition technology to ensure that our app adheres to high standards of privacy and ethics.?"
+      />
+      <Faq
+      question="Can facial classification technology (AI) accurately recognize and categorize people in photos? "
+      answer="Yes, we continuously improve the accuracy of our facial recognition technology to ensure that users can rely on our app to accurately identify and categorize people in photos."
       />
     </div>
   )
