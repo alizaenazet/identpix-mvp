@@ -2,10 +2,15 @@
 import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
 import Link from 'next/link'
+import { Input } from "@/components/ui/input"
 
 export default function RegisterForm() {
   return (
     <form action="/" className="gap-y-3 md: gap-x-3 flex flex-col w-full ">
+            <div className="flex flex-1 flex-col gap-1">
+                <Label>Email</Label>
+                <Input type="email" placeholder="Email" />
+            </div>
         <div className="gap-y-3 md: gap-x-3 flex flex-col md:flex-row w-full">
             <div className="flex flex-1 flex-col gap-1">
                 <Label>Backround</Label>
