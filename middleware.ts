@@ -3,24 +3,24 @@ import type { NextRequest } from 'next/server'
  
 export function middleware(request: NextRequest) {
     
-  if (request.nextUrl.pathname.startsWith('/try-demo-first')) {
-    return NextResponse.redirect(new URL('/register', request.url))
+  if (request.nextUrl.pathname.startsWith('/register-account')) {
+    return NextResponse.rewrite(new URL('/register', request.url))
   }
   
-  if (request.nextUrl.pathname.startsWith('/register-first')) {
-    return NextResponse.redirect(new URL('/register', request.url))
+  if (request.nextUrl.pathname.startsWith('/register-member')) {
+    return NextResponse.rewrite(new URL('/register', request.url))
   }
   
-  if (request.nextUrl.pathname.startsWith('/try-demo-last')) {
-    return NextResponse.redirect(new URL('/register', request.url))
+  if (request.nextUrl.pathname.startsWith('/register-trial')) {
+    return NextResponse.rewrite(new URL('/register', request.url))
   }
   
-  if (request.nextUrl.pathname.startsWith('/register-last')) {
-    return NextResponse.redirect(new URL('/register', request.url))
+  if (request.nextUrl.pathname.startsWith('/register-guest')) {
+    return NextResponse.rewrite(new URL('/register', request.url))
   }
   
-  if (request.nextUrl.pathname.startsWith('/learn-more')) {
-    return NextResponse.redirect(new URL('/pricing', request.url))
+  if (request.nextUrl.pathname.startsWith('/pricings')) {
+    return NextResponse.rewrite(new URL('/pricing', request.url))
   }
   
   if (request.nextUrl.pathname.startsWith('/register')) {
