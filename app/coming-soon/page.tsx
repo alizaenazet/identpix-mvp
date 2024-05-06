@@ -13,7 +13,7 @@ export default function Page() {
                 Coming Soon !
             </h1>
             <p className='text-sm font-medium w-full md:min-w-[446px]  md:text-base'>
-              Prepare to embark on an exciting journey with us. Our product will soon be available, offering you a delightful firsthand experience.<br/>Don't miss out on any updates in your email!
+              Prepare to embark on an exciting journey with us. Our product will soon be available, offering you a delightful firsthand experience.<br/>Don&apos;t miss out on any updates in your email!
             </p>
             <EmailForm />
         </div>
