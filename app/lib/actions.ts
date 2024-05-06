@@ -51,10 +51,11 @@ export async function insertUser(prevState: State, formData: FormData) {
     
     
     try {
-        await sql`
-        INSERT INTO form_entries (email, background, plan, ip, country, region)
-        VALUES (${email}, ${background}, ${plan}, ${ip}, ${country}, ${region});
-        `;
+        // Disable temporary
+        // await sql`
+        // INSERT INTO form_entries (email, background, plan, ip, country, region)
+        // VALUES (${email}, ${background}, ${plan}, ${ip}, ${country}, ${region});
+        // `;
     } catch (error) {
         console.log(error);
         
