@@ -1,10 +1,11 @@
 'use client'
 import { Button } from "@/components/ui/button"
 import { useState,useEffect } from "react"
+import { updateUserNotifable } from "@/app/lib/actions";
 
-export default function EmailForm() {
-
+export default function EmailForm({ip} : {ip:string}) {
   const [status, setStatus] = useState("")
+
 
   const setSubscribeStatus = (e: any) => {
     e.preventDefault()
@@ -29,7 +30,8 @@ export default function EmailForm() {
     <form className="flex flex-col gap-y-2" onSubmit={setSubscribeStatus}>
         { status == 'true' ?
           <Button className="bg-destructive" type="submit">Opt out of notifications</Button> :
-          <Button type="submit" >Get notified</Button>
+          <Button type="submit" onClick={() => {updateUserNotifable(true,ip)
+          }} >Get notified</Button>
         }
     </form>
   )
