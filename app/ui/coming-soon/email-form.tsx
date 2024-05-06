@@ -1,19 +1,35 @@
 'use client'
 import { Button } from "@/components/ui/button"
-import { Label } from "@/components/ui/label"
-import { Input } from "@/components/ui/input"
+import { useState,useEffect } from "react"
 
 export default function EmailForm() {
 
-  const setSubscribeStatus = (status: boolean) => {
-    localStorage.setItem("subcriptionStatus", `${status}`)
+  const [status, setStatus] = useState("")
+
+  const setSubscribeStatus = (e: any) => {
+    e.preventDefault()
+    const newValue = status == "false"
+    try {
+      if (typeof window !== "undefined") {
+        console.log(`turn the status into ${status}`);
+        localStorage.setItem("subcriptionStatus", `${newValue}`)
+        setStatus(`${newValue}`)
+        console.log(`turn the status into ${status}`);
+      }
+    } catch (error) {
+    }
   }
 
+ 
+  useEffect(() => {
+    setStatus(localStorage.getItem("subcriptionStatus") ?? "")
+  },[])
+
   return (
-    <form className="flex flex-col gap-y-2">
-        { localStorage.getItem("subcriptionStatus") == "true" ?
-          <Button className="bg-destructive" onClick={() => setSubscribeStatus(false)}>Opt out of notifications</Button> :
-          <Button className=""onClick={() => setSubscribeStatus(true)}>Get notified</Button>
+    <form className="flex flex-col gap-y-2" onSubmit={setSubscribeStatus}>
+        { status == 'true' ?
+          <Button className="bg-destructive" type="submit">Opt out of notifications</Button> :
+          <Button type="submit" >Get notified</Button>
         }
     </form>
   )
