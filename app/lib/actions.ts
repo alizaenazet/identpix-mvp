@@ -56,9 +56,14 @@ export async function insertUser(prevState: State, formData: FormData) {
         INSERT INTO users (ip_address, email, background, plan, country, region, notifable)
         VALUES (${ip}, ${email}, ${background}, ${plan}, ${country},${region},true);
         `;
-    } catch (error) {
-        console.log(error);
+    } catch (error: any) {
+        if(error.code == 23505){
+            redirect('/coming-soon');
+        }
         
+        
+        console.log("🔥 error happen :");
+        console.log(error);
         return {message: 'Database Error: Failed to insert user data.',}      
     }
 
