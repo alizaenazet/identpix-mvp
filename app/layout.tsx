@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/app/ui/navbar/navbar";
 import Footer from "@/app/ui/footer";
 const inter = Inter({ subsets: ["latin"] });
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   icons: {
@@ -26,6 +27,8 @@ export default function RootLayout({
       <body className={inter.className}>
       <div className="fixed top-0 left-0 right-0"><Navbar/></div>
         {children}
+        {/* Disable for temporary development */}
+        <Analytics /> 
         <Footer />
       </body>
     </html>
