@@ -53,12 +53,17 @@ export async function insertUser(prevState: State, formData: FormData) {
     try {
         // Disable temporary
         await sql`
-        INSERT INTO form_entries (email, background, plan, ip, country, region)
-        VALUES (${email}, ${background}, ${plan}, ${ip}, ${country}, ${region});
+        INSERT INTO users (ip_address, email, background, plan, country, region, notifable)
+        VALUES (${ip}, ${email}, ${background}, ${plan}, ${country},${region},true);
         `;
-    } catch (error) {
-        console.log(error);
+    } catch (error: any) {
+        if(error.code == 23505){
+            redirect('/coming-soon');
+        }
         
+        
+        console.log("🔥 error happen :");
+        console.log(error);
         return {message: 'Database Error: Failed to insert user data.',}      
     }
 
@@ -67,11 +72,10 @@ export async function insertUser(prevState: State, formData: FormData) {
 }
 
 export async function updateUserNotifable(value:boolean,ip:string) {
-    console.log(`🔥 tes coy masuk kiw ${value} - ${ip}`);
     try {
         await sql`
             UPDATE users
-            SET color = ${value}
+            SET notifable = ${value}
             WHERE ip_address = ${ip}
         `;
     } catch (error) {

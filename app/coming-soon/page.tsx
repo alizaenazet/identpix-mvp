@@ -8,6 +8,7 @@ export const metadata: Metadata = {
 export default function Page() {
   const headersList = headers()
   const ip = headersList.get('ip') ?? "noIp"
+  
   return (
     <main className='flex h-screen flex-col  justify-center items-center p-14 md:p-32 lg:p-55'>
         <div className='flex flex-col gap-3.5 items-start justify-center'>
