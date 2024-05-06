@@ -6,7 +6,7 @@ export function middleware(request: NextRequest) {
     const requestHeaders = new Headers(request.headers)
     requestHeaders.set("country", request.geo?.country ?? "ID")
     requestHeaders.set("region", request.geo?.region ?? "JI")
-    requestHeaders.set("ip", request.ip ?? "192.168.1.1")
+    requestHeaders.set("ip", request.ip ?? "noIP")
     return NextResponse.next({
         request: {
           // New request headers
@@ -17,7 +17,7 @@ export function middleware(request: NextRequest) {
 
   if (request.nextUrl.pathname.startsWith('/coming-soon')) {
     const requestHeaders = new Headers(request.headers)
-    requestHeaders.set("ip", request.ip ?? "192.168.1.1")
+    requestHeaders.set("ip", request.ip ?? "noIP")
     return NextResponse.next({
         request: {
           // New request headers
