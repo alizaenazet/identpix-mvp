@@ -7,26 +7,26 @@ export default function YearlyPlan() {
       <PlanCard 
             imageUrl="user.svg"
             title="Individual"
-            description="Plan cocok untuk perorangan seperti photograper dan freelancer"
-            price={5}
+            description="This plan is suitable for individuals such as photographers and freelancers."
+            price={"3"}
             piece="year"
-            specificationList={["publish album","album size up to 25gb","5000 searcher"]}
+            specificationList={["publish album","album size up to 25gb","5000 searches"]}
         />
         <PlanCard 
             imageUrl="users.svg"
             title="Small team"
-            description="Cocok untuk melakukan distribusi dengan tim menengah kebawa"
-            price={8}
+            description="Ideal for distribution with medium to small teams."
+            price={"6"}
             piece="year"
-            specificationList={["publish album","album size up to 45gb","10000 searcher"]}
+            specificationList={["publish album","album size up to 45gb","10000 searches"]}
         />
         <PlanCard 
             imageUrl="building.svg"
             title="Organization"
-            description="cocok untuk distribusi dengan organisasi menengah ke atas"
-            price={12}
+            description="Suitable for distribution with medium to large organizations."
+            price={"10"}
             piece="year"
-            specificationList={["publish album","album size up to 100gb","100000 searcher"]}
+            specificationList={["publish album","album size up to 100gb","100000 searches"]}
         />
     </div>
   )
