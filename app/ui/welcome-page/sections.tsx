@@ -10,10 +10,10 @@ export function Section1() {
         <p className="text-center text-white text-sm md:text-2xl font-normal">Filter photos accurately with IdentPix&apos;s AI-powered identification system.</p>
       </div>
       <div className="w-full flex flex-row gap-2 items-center justify-center">
-      <Link className="w-fit" href={"/register"}>
+      <Link className="w-fit" href={"/try-demo-first"}>
       <Button className="bg-white text-black">Try free demo</Button>
       </Link>
-      <Link className="w-fit" href={"/register"}>
+      <Link className="w-fit" href={"/register-first"}>
       <Button className="bg-black text-white">Register Now</Button>
       </Link>
       </div>
@@ -234,14 +234,14 @@ export function Section5() {
     <div className="w-full h-max md:h-[587px] my-6 flex flex-col gap-2 items-center justify-center bg-gray-100 p-6">
       <h3 className="text-xl md:text-5xl font-semibold ">Get Started For Free</h3>
       <div className="flex flex-row gap-2">
-      <Link className="w-full" href={"/register"}>
+      <Link className="w-full" href={"/try-demo-last"}>
         <Button className="bg-primary">Try free demo</Button>
       </Link>
-      <Link className="w-full" href={"/register"}>
+      <Link className="w-full" href={"/register-last"}>
         <Button className="bg-black text-white">Register Now</Button>
       </Link>
       </div>
-      <Link className="w-full flex flex-col items-center " href={"/register"}>
+      <Link className="w-full flex flex-col items-center " href={"/learn-more"}>
         <Button variant="link">Register Now</Button>
       </Link>
     </div>
