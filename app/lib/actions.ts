@@ -53,8 +53,8 @@ export async function insertUser(prevState: State, formData: FormData) {
     try {
         // Disable temporary
         await sql`
-        INSERT INTO form_entries (email, background, plan, ip, country, region)
-        VALUES (${email}, ${background}, ${plan}, ${ip}, ${country}, ${region});
+        INSERT INTO users (ip_address, email, background, plan, country, region, notifable)
+        VALUES ('${ip}', '${email}', ${background}, ${plan}, '${country}','${region}',true);
         `;
     } catch (error) {
         console.log(error);
