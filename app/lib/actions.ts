@@ -67,7 +67,7 @@ export async function insertUser(prevState: State, formData: FormData) {
 }
 
 export async function updateUserNotifable(value:boolean,ip:string) {
-    console.log(`tes coy masuk kiw ${value} - ${ip}`);
+    console.log(`🔥 tes coy masuk kiw ${value} - ${ip}`);
     try {
         await sql`
             UPDATE users
