@@ -52,10 +52,10 @@ export async function insertUser(prevState: State, formData: FormData) {
     
     try {
         // Disable temporary
-        // await sql`
-        // INSERT INTO form_entries (email, background, plan, ip, country, region)
-        // VALUES (${email}, ${background}, ${plan}, ${ip}, ${country}, ${region});
-        // `;
+        await sql`
+        INSERT INTO form_entries (email, background, plan, ip, country, region)
+        VALUES (${email}, ${background}, ${plan}, ${ip}, ${country}, ${region});
+        `;
     } catch (error) {
         console.log(error);
         
@@ -64,4 +64,17 @@ export async function insertUser(prevState: State, formData: FormData) {
 
     revalidatePath('/register');
     redirect('/coming-soon');
+}
+
+export async function updateUserNotifable(value:boolean,ip:string) {
+    console.log(`🔥 tes coy masuk kiw ${value} - ${ip}`);
+    try {
+        await sql`
+            UPDATE users
+            SET color = ${value}
+            WHERE ip_address = ${ip}
+        `;
+    } catch (error) {
+        redirect('/register');
+    }
 }
