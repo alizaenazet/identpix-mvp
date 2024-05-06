@@ -27,7 +27,8 @@ export default function RootLayout({
       <body className={inter.className}>
       <div className="fixed top-0 left-0 right-0"><Navbar/></div>
         {children}
-        <Analytics />
+        {/* Disable for temporary development */}
+        {/* <Analytics /> */} 
         <Footer />
       </body>
     </html>
