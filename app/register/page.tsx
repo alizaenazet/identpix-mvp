@@ -1,12 +1,18 @@
 import RegisterForm from "@/app/ui/register/register-form";
 import { Metadata } from 'next';
+import { headers } from 'next/headers'
 
 export const metadata: Metadata = {
   title: 'Register',
 };
 export default function Page() {
+  const headersList = headers()
+  const referer = headersList.get('country')
+  const region = headersList.get('region')
+  const ip = headersList.get('ip')
   return (
     <main className='flex h-screen flex-col  justify-center items-center p-16'>
+      <h1>{`${referer}, ${region}, ${ip}`}</h1>
         <div className="flex flex-col items-start justify-center gap-3.5 md:w-[416px]" >
             <div className="flex flex-col items-start justify-center gap-2">
             <h1 className="text-xl font-semibold">Everyone has a purpose</h1>
