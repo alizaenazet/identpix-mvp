@@ -13,6 +13,7 @@ export default function RegisterForm({userGeo} : {userGeo: UserGeo}) {
     
     const initialState = { message: "", errors: {} };
     const [state, dispatch] = useFormState(insertUser, initialState);
+    
   return (
     <form action={dispatch} className="gap-y-3 md: gap-x-3 flex flex-col w-full ">
             <div className="flex flex-1 flex-col gap-1">
@@ -67,8 +68,8 @@ export default function RegisterForm({userGeo} : {userGeo: UserGeo}) {
             <input type="text" name="region" hidden value={userGeo.region}  />
         </div>
             <Button className="w-full" type="submit" >Continue</Button>
-            {state.errors?.ip &&
-                state.errors.ip.map((err:string) => (
+            {state.errors?.region &&
+                state.errors.region.map((err:string) => (
                     <p key={err}>{err}</p>
                 ))
             }

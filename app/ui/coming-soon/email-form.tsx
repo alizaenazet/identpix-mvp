@@ -6,7 +6,6 @@ import { updateUserNotifable } from "@/app/lib/actions";
 export default function EmailForm({ip} : {ip:string}) {
   const [status, setStatus] = useState("")
 
-
   const setSubscribeStatus = (e: any) => {
     e.preventDefault()
     const newValue = status == "false"
@@ -29,8 +28,8 @@ export default function EmailForm({ip} : {ip:string}) {
   return (
     <form className="flex flex-col gap-y-2" onSubmit={setSubscribeStatus}>
         { status == 'true' ?
-          <Button className="bg-destructive" type="submit" onClick={() => {updateUserNotifable(true,ip)
-          }}>Opt out of notifications</Button> : // set seperti dibawahnya
+          <Button className="bg-destructive" type="submit" onClick={() => {updateUserNotifable(false,ip)
+          }}>Opt out of notifications</Button> :
           <Button type="submit" onClick={() => {updateUserNotifable(true,ip)
           }} >Get notified</Button>
         }

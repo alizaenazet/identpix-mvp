@@ -54,7 +54,7 @@ export async function insertUser(prevState: State, formData: FormData) {
         // Disable temporary
         await sql`
         INSERT INTO users (ip_address, email, background, plan, country, region, notifable)
-        VALUES ('${ip}', '${email}', ${background}, ${plan}, '${country}','${region}',true);
+        VALUES (${ip}, ${email}, ${background}, ${plan}, ${country},${region},true);
         `;
     } catch (error) {
         console.log(error);
@@ -67,11 +67,10 @@ export async function insertUser(prevState: State, formData: FormData) {
 }
 
 export async function updateUserNotifable(value:boolean,ip:string) {
-    console.log(`🔥 tes coy masuk kiw ${value} - ${ip}`);
     try {
         await sql`
             UPDATE users
-            SET color = ${value}
+            SET notifable = ${value}
             WHERE ip_address = ${ip}
         `;
     } catch (error) {
