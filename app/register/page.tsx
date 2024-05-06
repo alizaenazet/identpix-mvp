@@ -10,7 +10,7 @@ export default function Page() {
   const headersList = headers()
   const country = headersList.get('country') ?? "noCountry"
   const region = headersList.get('region') ?? "noRegion"
-  const ip = headersList.get('ip') ?? "0.0.0.0"
+  const ip = headersList.get('ip') ?? "noIp"
   const userGeo: UserGeo = {ip,country,region}
   return (
     <main className='flex h-screen flex-col  justify-center items-center p-16'>
