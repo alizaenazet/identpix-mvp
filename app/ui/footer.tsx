@@ -22,7 +22,7 @@ export default function Footer() {
           </Link>
         </div>
         <div className="flex items-center space-x-4 mb-8">
-          <Link className="hover:text-gray-300 transition-colors" href="#">
+          <Link className="hover:text-gray-300 transition-colors" href="https://www.instagram.com/identpix">
             <InstagramIcon className="h-6 w-6" />
           </Link>
 

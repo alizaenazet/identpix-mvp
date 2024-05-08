@@ -6,6 +6,7 @@ import { UserGeo } from "@/app/lib/definition";
 export const metadata: Metadata = {
   title: 'Register',
 };
+
 export default function Page() {
   const headersList = headers()
   const country = headersList.get('country') ?? "noCountry"
