@@ -25,24 +25,24 @@ export function Section2() {
   return (
     <div className="w-full h-fit p-3 flex flex-col md:flex-row-reverse items-center justify-center lg:justify-center gap-4 md:justify-between md:px-8 lg:gap-32 my-6 md:my-12">
       <Image
-      src={"/section-2-image.jpg"}
+      src={"/effectively-streamline.png"}
       width={245}
       height={252}
-      alt="section-2-image"
+      alt="effectively-streamline"
       className="md:hidden"
       />
       <Image
-      src={"/section-2-image.jpg"}
+      src={"/effectively-streamline.png"}
       width={318}
       height={328}
-      alt="section-2-image"
+      alt="effectively-streamline"
       className="hidden md:block lg:hidden"
       />
       <Image
-      src={"/section-2-image.jpg"}
+      src={"/effectively-streamline.png"}
       width={506}
       height={522}
-      alt="section-2-image"
+      alt="effectively-streamline"
       className="hidden lg:block"
       />
       <div className="flex flex-col md:w-96 justify-start items-center gap-2 px-4 md:px-0">
@@ -56,45 +56,66 @@ export function Section2() {
 export function Section3() {
   return (
     <div className="w-full h-max flex flex-col md:flex-row-reverse justify-center lg:justify-center items-center bg-gray-100 gap-5 px-7 py-4 md:justify-between md:px-8 md:py-32  lg:gap-[137px]">
-      <div className="flex flex-row gap-2 flex-wrap items-center justify-center md:hidden">
+      {/* <div className="flex flex-row gap-2 flex-wrap items-center justify-center md:hidden"> */}
         <Image
+      src={"/customize-photo-selection.png"}
+      width={245}
+      height={252}
+      alt="customize-photo-selection"
+      className="md:hidden"
+      />
+      <Image
+      src={"/customize-photo-selection.png"}
+      width={318}
+      height={328}
+      alt="customize-photo-selection"
+      className="hidden md:block lg:hidden"
+      />
+      <Image
+      src={"/customize-photo-selection.png"}
+      width={506}
+      height={522}
+      alt="customize-photo-selection"
+      className="hidden lg:block"
+      />
+        {/* <Image
         className="rounded-full"
-        src={"/section-2-image.jpg"}
+        src={"/section-2-image.png"}
         width={90.45}
         height={91.46}
         alt="image"
         />
         <Image
         className="rounded-full"
-        src={"/section-2-image.jpg"}
+        src={"/section-2-image.png"}
         width={90.45}
         height={91.46}
         alt="image"
         />
         <Image
         className="rounded-full"
-        src={"/section-2-image.jpg"}
+        src={"/section-2-image.png"}
         width={90.45}
         height={91.46}
         alt="image"
         />
         <Image
         className="rounded-full"
-        src={"/section-2-image.jpg"}
+        src={"/section-2-image.png"}
         width={90.45}
         height={91.46}
         alt="image"
         />
         <Image
         className="rounded-full"
-        src={"/section-2-image.jpg"}
+        src={"/section-2-image.png"}
         width={90.45}
         height={91.46}
         alt="image"
         />
         <Image
         className="rounded-full"
-        src={"/section-2-image.jpg"}
+        src={"/section-2-image.png"}
         width={90.45}
         height={91.46}
         alt="image"
@@ -103,42 +124,42 @@ export function Section3() {
       <div className=" md:flex flex-row gap-3 flex-wrap items-center justify-center hidden lg:hidden ">
         <Image
         className="rounded-full"
-        src={"/section-2-image.jpg"}
+        src={"/section-2-image.png"}
         width={92.92}
         height={92.92}
         alt="image"
         />
         <Image
         className="rounded-full"
-        src={"/section-2-image.jpg"}
+        src={"/section-2-image.png"}
         width={92.92}
         height={92.92}
         alt="image"
         />
         <Image
         className="rounded-full"
-        src={"/section-2-image.jpg"}
+        src={"/section-2-image.png"}
         width={92.92}
         height={92.92}
         alt="image"
         />
         <Image
         className="rounded-full"
-        src={"/section-2-image.jpg"}
+        src={"/section-2-image.png"}
         width={92.92}
         height={92.92}
         alt="image"
         />
         <Image
         className="rounded-full"
-        src={"/section-2-image.jpg"}
+        src={"/section-2-image.png"}
         width={92.92}
         height={92.92}
         alt="image"
         />
         <Image
         className="rounded-full"
-        src={"/section-2-image.jpg"}
+        src={"/section-2-image.png"}
         width={92.92}
         height={92.92}
         alt="image"
@@ -147,47 +168,47 @@ export function Section3() {
       <div className=" lg:flex w-[500px] flex-row  gap-6 flex-wrap items-center justify-center hidden ">
         <Image
         className="rounded-full"
-        src={"/section-2-image.jpg"}
+        src={"/section-2-image.png"}
         width={150}
         height={150}
         alt="image"
         />
         <Image
         className="rounded-full"
-        src={"/section-2-image.jpg"}
+        src={"/section-2-image.png"}
         width={150}
         height={150}
         alt="image"
         />
         <Image
         className="rounded-full"
-        src={"/section-2-image.jpg"}
+        src={"/section-2-image.png"}
         width={150}
         height={150}
         alt="image"
         />
         <Image
         className="rounded-full"
-        src={"/section-2-image.jpg"}
+        src={"/section-2-image.png"}
         width={150}
         height={150}
         alt="image"
         />
         <Image
         className="rounded-full"
-        src={"/section-2-image.jpg"}
+        src={"/section-2-image.png"}
         width={150}
         height={150}
         alt="image"
         />
         <Image
         className="rounded-full"
-        src={"/section-2-image.jpg"}
+        src={"/section-2-image.png"}
         width={150}
         height={150}
         alt="image"
-        />
-      </div>
+        /> */}
+      {/* </div> */}
 
       <div className="w-full lg:w-[373px] flex flex-col gap-2 justify-start items-center ">
         <h3 className="text-black text-sm md:text-2xl  font-semibold">Customize photo selection based on every individual</h3>
@@ -201,24 +222,24 @@ export function Section4() {
   return(
     <div className="w-full h-max flex flex-col md:flex-row-reverse items-center justify-center lg:justify-center gap-4 md:justify-between md:px-8 lg:gap-[108px] px-7 py-4 mt-7 mb-2 ">
       <Image
-      src={"/section-2-image.jpg"}
+      src={"/unlimited-access.png"}
       width={245}
       height={252}
-      alt="section 4 image"
+      alt="unlimited-access"
       className="md:hidden"
       />
       <Image
-      src={"/section-2-image.jpg"}
+      src={"/unlimited-access.png"}
       width={318}
       height={328}
-      alt="section 4 image"
+      alt="unlimited-access"
       className="hidden md:block lg:hidden"
       />
       <Image
-      src={"/section-2-image.jpg"}
+      src={"/unlimited-access.png"}
       width={506}
       height={522}
-      alt="section 4 image"
+      alt="unlimited-access"
       className="hidden lg:block"
       />
       <div className="flex flex-col gap-3 justify-center items-start md:w-96 md:py-12">
@@ -254,15 +275,15 @@ export function Section6() {
       <h3 className="text-base md:text-3xl font-semibold">FAQ</h3>
       <Faq
       question="Is my personal data secure?"
-      answer="Lorem ipsum dolor sit amet, consectetur? "
+      answer="Ensuring the safety of your data is our top priority. We&apos;ve implemented rigorous security measures to protect your personal information. For more details, please review our Privacy Policy."
       />
       <Faq
       question="How can I get further assistance if I encounter an issue? "
-      answer="If you encounter any issues or require further assistance, feel free to reach out to our support team via the 'Help' option in the app or by emailing us at [support email address]. We&apos;re here to assist you! "
+      answer="If you encounter any issues or require further assistance, feel free to reach out to our support team via the 'Help' option in the app or by emailing us at help@identpix.com . We&apos;re here to assist you!"
       />
       <Faq
       question="How do I provide feedback or report an issue? "
-      answer="We greatly value your feedback! Feel free to share your input through the 'Contact Us' option in the app or by emailing us at [support email address]."
+      answer="We greatly value your feedback! Feel free to share your input through the 'Contact Us' option in the app or by emailing us at support@identpix.com."
       />
       <Faq
       question="Are there limitations on the use of facial classification technology (AI) in this application? "
