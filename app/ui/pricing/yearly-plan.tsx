@@ -9,7 +9,7 @@ export default function YearlyPlan() {
             title="Individual"
             description="This plan is suitable for individuals such as photographers and freelancers."
             price={"3"}
-            piece="year"
+            piece="month"
             specificationList={["publish album","album size up to 25gb","5000 searches"]}
         />
         <PlanCard 
@@ -17,7 +17,7 @@ export default function YearlyPlan() {
             title="Small team"
             description="Ideal for distribution with medium to small teams."
             price={"6"}
-            piece="year"
+            piece="month"
             specificationList={["publish album","album size up to 45gb","10000 searches"]}
         />
         <PlanCard 
@@ -25,7 +25,7 @@ export default function YearlyPlan() {
             title="Organization"
             description="Suitable for distribution with medium to large organizations."
             price={"10"}
-            piece="year"
+            piece="month"
             specificationList={["publish album","album size up to 100gb","100000 searches"]}
         />
     </div>
